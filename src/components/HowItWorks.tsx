@@ -24,7 +24,7 @@ const steps = [
     number: "04",
     icon: Key,
     title: "Arrive & Relax",
-    description: "Walk into your perfectly prepared shore home — climate set, fridge stocked, and everything exactly how you like it.",
+    description: "Walk into your perfectly prepared beach home — climate set, fridge stocked, and everything exactly how you like it.",
   },
 ];
 

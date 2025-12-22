@@ -50,7 +50,7 @@ const services = [
   {
     icon: Leaf,
     title: "Seasonal Prep",
-    description: "Winterization, storm prep, and seasonal opening/closing services for your shore property.",
+    description: "Winterization, storm prep, and seasonal opening/closing services for your beach property.",
     color: "bg-teal/10 text-teal",
   },
   {
@@ -76,7 +76,7 @@ const Services = () => {
             Our Services
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-            Everything Your Shore Home Needs
+            Everything Your Beach Home Needs
           </h2>
           <p className="text-lg text-muted-foreground">
             From routine check-ins to full arrival preparation, we offer comprehensive 

@@ -4,21 +4,21 @@ import { Star, Quote } from "lucide-react";
 const testimonials = [
   {
     name: "Sarah & Michael Thompson",
-    location: "Long Beach Island",
+    location: "Ocean City, MD",
     image: "ST",
     rating: 5,
-    text: "ShoreHands has been a game-changer for us. We live in Philadelphia and used to stress about our LBI house all winter. Now we get regular updates with photos, and everything is perfect when we arrive for summer weekends.",
+    text: "ShoreHands has been a game-changer for us. We live in DC and used to stress about our beach house all winter. Now we get regular updates with photos, and everything is perfect when we arrive for summer weekends.",
   },
   {
     name: "David Chen",
-    location: "Ocean City, NJ",
+    location: "Rehoboth Beach, DE",
     image: "DC",
     rating: 5,
     text: "The grocery stocking service alone is worth it. After a 3-hour drive with the kids, walking into a stocked fridge and cool house is absolute heaven. Highly recommend!",
   },
   {
     name: "Patricia Williams",
-    location: "Avalon",
+    location: "Bethany Beach, DE",
     image: "PW",
     rating: 5,
     text: "During last year's storm, ShoreHands checked on our property, documented everything, and coordinated repairs before we even knew there was damage. True peace of mind.",
@@ -40,11 +40,11 @@ const Testimonials = () => {
             Testimonials
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6">
-            Loved by Shore Homeowners
+            Loved by Beach Homeowners
           </h2>
           <p className="text-lg text-sand/70">
             Don't just take our word for it — hear from families who trust ShoreHands 
-            with their shore properties.
+            with their beach properties.
           </p>
         </motion.div>
 

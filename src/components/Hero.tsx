@@ -26,7 +26,7 @@ const Hero = () => {
           >
             <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal/20 text-teal-light text-sm font-medium mb-6 backdrop-blur-sm border border-teal/30">
               <Star className="w-4 h-4 fill-current" />
-              Premium Shore Home Concierge
+              Premium Beach Home Concierge
             </span>
           </motion.div>
 
@@ -36,7 +36,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-sand-light leading-tight mb-6"
           >
-            Your Shore Home,{" "}
+            Your Beach Home,{" "}
             <span className="text-teal-light">Always Ready</span>
           </motion.h1>
 
@@ -46,7 +46,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg md:text-xl text-sand/80 mb-8 max-w-2xl"
           >
-            We're your trusted concierge for second homes on the shore. From stocking your fridge 
+            We're your trusted concierge for second homes at the beach. From stocking your fridge 
             to climate control, home checks, and seasonal prep — we handle everything so you can 
             simply arrive and relax.
           </motion.p>

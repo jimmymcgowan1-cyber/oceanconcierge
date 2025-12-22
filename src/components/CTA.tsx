@@ -19,7 +19,7 @@ const CTA = () => {
           className="max-w-4xl mx-auto text-center"
         >
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-            Ready to Enjoy Your Shore Home{" "}
+            Ready to Enjoy Your Beach Home{" "}
             <span className="text-teal">Worry-Free?</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
@@ -34,12 +34,12 @@ const CTA = () => {
             </Button>
             <Button variant="outline" size="xl" className="border-2">
               <Phone className="w-5 h-5" />
-              (609) 555-SHORE
+              (410) 555-BEACH
             </Button>
           </div>
 
           <p className="mt-8 text-muted-foreground text-sm">
-            No commitment required • Serving the Jersey Shore from LBI to Cape May
+            No commitment required • Serving Maryland &amp; Delaware beaches
           </p>
         </motion.div>
       </div>
