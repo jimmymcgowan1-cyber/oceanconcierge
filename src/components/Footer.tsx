@@ -18,7 +18,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-sand/70 mb-6 leading-relaxed">
-              Your trusted concierge for second homes on the Jersey Shore. 
+              Your trusted concierge for beach homes in Maryland and Delaware. 
               We keep your property perfect, so you can simply arrive and relax.
             </p>
             <div className="flex gap-4">
@@ -49,7 +49,7 @@ const Footer = () => {
           <div>
             <h4 className="font-heading font-semibold text-lg text-sand-light mb-6">Service Areas</h4>
             <ul className="space-y-3">
-              {["Long Beach Island", "Ocean City", "Avalon", "Stone Harbor", "Cape May", "Sea Isle City"].map((area) => (
+              {["Ocean City, MD", "Rehoboth Beach, DE", "Bethany Beach, DE", "Dewey Beach, DE", "Fenwick Island, DE", "Lewes, DE"].map((area) => (
                 <li key={area}>
                   <span className="text-sand/70">{area}</span>
                 </li>
@@ -64,7 +64,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-teal mt-0.5" />
                 <div>
-                  <p className="text-sand-light font-medium">(609) 555-SHORE</p>
+                  <p className="text-sand-light font-medium">(410) 555-BEACH</p>
                   <p className="text-sand/60 text-sm">24/7 Emergency Line</p>
                 </div>
               </li>
@@ -79,7 +79,7 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-teal mt-0.5" />
                 <div>
-                  <p className="text-sand/70">Serving the entire<br />New Jersey Shore</p>
+                  <p className="text-sand/70">Serving Maryland &amp;<br />Delaware beaches</p>
                 </div>
               </li>
             </ul>

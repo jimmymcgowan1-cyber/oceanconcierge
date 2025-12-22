@@ -83,7 +83,7 @@ const ContactForm = () => {
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Service Area</h4>
                   <p className="text-muted-foreground">
-                    Long Beach Island to Cape May, NJ
+                    Ocean City, MD to Rehoboth Beach, DE
                   </p>
                 </div>
               </div>
@@ -94,7 +94,7 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Call Us</h4>
-                  <p className="text-muted-foreground">(609) 555-SHORE</p>
+                  <p className="text-muted-foreground">(410) 555-BEACH</p>
                 </div>
               </div>
 
@@ -172,7 +172,7 @@ const ContactForm = () => {
                       <FormItem>
                         <FormLabel>Property Location</FormLabel>
                         <FormControl>
-                          <Input placeholder="Long Beach Island, NJ" {...field} />
+                          <Input placeholder="Ocean City, MD" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>

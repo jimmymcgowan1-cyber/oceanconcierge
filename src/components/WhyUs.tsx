@@ -5,7 +5,7 @@ const features = [
   {
     icon: Users,
     title: "Local Expertise",
-    description: "Our team lives and works on the shore. We know the area, the vendors, and what your property needs.",
+    description: "Our team lives and works at the beach. We know the area, the vendors, and what your property needs.",
   },
   {
     icon: Clock,
@@ -44,10 +44,10 @@ const WhyUs = () => {
               Why ShoreHands
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
-              Your Trusted Partner for Shore Home Care
+              Your Trusted Partner for Beach Home Care
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              We understand the unique challenges of owning a second home at the shore. 
+              We understand the unique challenges of owning a second home at the beach. 
               That's why we've built a comprehensive service that handles everything, 
               giving you complete peace of mind.
             </p>
