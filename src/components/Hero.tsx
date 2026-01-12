@@ -34,17 +34,17 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-cream-light leading-tight mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-white leading-tight mb-6 drop-shadow-[0_4px_20px_rgba(0,0,0,0.5)]"
           >
             Your Beach Home,{" "}
-            <span className="text-gold-light">Always Ready</span>
+            <span className="text-gold-light drop-shadow-[0_2px_10px_rgba(0,0,0,0.4)]">Always Ready</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-lg md:text-xl text-cream/80 mb-8 max-w-2xl"
+            className="text-lg md:text-xl text-white/95 mb-8 max-w-2xl drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] font-medium"
           >
             We're your trusted concierge for second homes at the beach. From stocking your fridge 
             to climate control, home checks, and seasonal prep — we handle everything so you can 
@@ -78,8 +78,8 @@ const Hero = () => {
                 <Shield className="w-6 h-6 text-gold-light" />
               </div>
               <div>
-                <p className="text-cream-light font-semibold">Fully Insured</p>
-                <p className="text-cream/60 text-sm">Licensed & bonded</p>
+                <p className="text-white font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">Fully Insured</p>
+                <p className="text-white/80 text-sm drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">Licensed & bonded</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -87,8 +87,8 @@ const Hero = () => {
                 <Clock className="w-6 h-6 text-gold-light" />
               </div>
               <div>
-                <p className="text-cream-light font-semibold">24/7 Support</p>
-                <p className="text-cream/60 text-sm">Always available</p>
+                <p className="text-white font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">24/7 Support</p>
+                <p className="text-white/80 text-sm drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">Always available</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -96,8 +96,8 @@ const Hero = () => {
                 <Star className="w-6 h-6 text-gold-light fill-current" />
               </div>
               <div>
-                <p className="text-cream-light font-semibold">5-Star Rated</p>
-                <p className="text-cream/60 text-sm">Trusted by 200+ families</p>
+                <p className="text-white font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">5-Star Rated</p>
+                <p className="text-white/80 text-sm drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">Trusted by 200+ families</p>
               </div>
             </div>
           </motion.div>
