@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const CTA = () => {
   return (
@@ -28,14 +29,18 @@ const CTA = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="teal" size="xl">
-              Get Your Free Quote
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="outline" size="xl" className="border-2">
-              <Phone className="w-5 h-5" />
-              609-865-4038
-            </Button>
+            <Link to="/checklist">
+              <Button variant="teal" size="xl">
+                Get Your Free Quote
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </Link>
+            <a href="tel:609-865-4038">
+              <Button variant="outline" size="xl" className="border-2">
+                <Phone className="w-5 h-5" />
+                609-865-4038
+              </Button>
+            </a>
           </div>
 
           <p className="mt-8 text-muted-foreground text-sm">
