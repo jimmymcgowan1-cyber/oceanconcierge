@@ -39,14 +39,14 @@ const HowItWorks = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="text-teal font-semibold text-sm uppercase tracking-wider mb-4 block">
+          <span className="text-gold font-semibold text-sm uppercase tracking-wider mb-4 block">
             How It Works
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
             Simple Steps to Peace of Mind
           </h2>
           <p className="text-lg text-muted-foreground">
-            Getting started with ShoreHands is easy. Here's how we make caring for your 
+            Getting started with Ocean Concierge is easy. Here's how we make caring for your 
             second home completely effortless.
           </p>
         </motion.div>
@@ -65,15 +65,15 @@ const HowItWorks = () => {
                 transition={{ duration: 0.5, delay: index * 0.15 }}
                 className="relative"
               >
-                <div className="bg-card rounded-2xl p-8 text-center relative z-10 border border-border hover:border-teal/30 transition-all duration-300 hover:shadow-medium h-full">
+                <div className="bg-card rounded-2xl p-8 text-center relative z-10 border border-border hover:border-gold/30 transition-all duration-300 hover:shadow-medium h-full">
                   {/* Step number */}
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-teal text-accent-foreground text-sm font-bold flex items-center justify-center">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-gold text-accent-foreground text-sm font-bold flex items-center justify-center">
                     {index + 1}
                   </div>
 
                   {/* Icon */}
-                  <div className="w-16 h-16 mx-auto rounded-2xl bg-teal/10 flex items-center justify-center mb-6 mt-2">
-                    <step.icon className="w-8 h-8 text-teal" />
+                  <div className="w-16 h-16 mx-auto rounded-2xl bg-gold/10 flex items-center justify-center mb-6 mt-2">
+                    <step.icon className="w-8 h-8 text-gold" />
                   </div>
 
                   <h3 className="text-xl font-heading font-semibold text-foreground mb-3">

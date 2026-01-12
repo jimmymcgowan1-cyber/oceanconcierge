@@ -9,113 +9,119 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ShoreHands Design System
+/* Ocean Concierge Design System
    Coastal luxury meets modern efficiency
-   Colors: Navy (trust), Teal (coastal), Sand (warmth)
+   Colors: Deep Navy (trust), Gold (luxury), Cream (warmth)
    Typography: Outfit (headings) + Inter (body)
 */
 
 @layer base {
   :root {
-    /* Navy Blue - Primary trust color */
-    --primary: 213 55% 20%;
-    --primary-foreground: 45 30% 96%;
+    /* Deep Navy - Primary trust color (from logo background) */
+    --primary: 220 50% 10%;
+    --primary-foreground: 42 35% 92%;
     
-    /* Sand Beige - Warm background */
-    --background: 40 30% 97%;
-    --foreground: 213 55% 15%;
+    /* Cream/Sand - Warm background (from shell color) */
+    --background: 42 35% 96%;
+    --foreground: 220 50% 10%;
     
     /* Card surfaces - Soft white with warmth */
-    --card: 45 40% 99%;
-    --card-foreground: 213 55% 15%;
+    --card: 42 40% 99%;
+    --card-foreground: 220 50% 10%;
     
-    --popover: 45 40% 99%;
-    --popover-foreground: 213 55% 15%;
+    --popover: 42 40% 99%;
+    --popover-foreground: 220 50% 10%;
     
-    /* Teal - Coastal accent */
-    --accent: 180 40% 40%;
-    --accent-foreground: 45 30% 98%;
+    /* Gold - Luxury accent (from shell outline) */
+    --accent: 42 55% 55%;
+    --accent-foreground: 220 50% 10%;
     
-    /* Secondary - Light sand */
-    --secondary: 40 25% 92%;
-    --secondary-foreground: 213 55% 20%;
+    /* Secondary - Light cream */
+    --secondary: 42 30% 92%;
+    --secondary-foreground: 220 50% 15%;
     
     /* Muted tones */
-    --muted: 40 15% 90%;
-    --muted-foreground: 213 20% 45%;
+    --muted: 42 20% 90%;
+    --muted-foreground: 220 25% 40%;
     
     /* Destructive */
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 100%;
     
     /* Borders and inputs */
-    --border: 40 20% 85%;
-    --input: 40 20% 85%;
-    --ring: 180 40% 40%;
+    --border: 42 25% 85%;
+    --input: 42 25% 85%;
+    --ring: 42 55% 55%;
     
     --radius: 0.75rem;
     
     /* Sidebar */
-    --sidebar-background: 213 55% 15%;
-    --sidebar-foreground: 45 30% 96%;
-    --sidebar-primary: 180 40% 50%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 213 55% 25%;
-    --sidebar-accent-foreground: 45 30% 96%;
-    --sidebar-border: 213 40% 25%;
-    --sidebar-ring: 180 40% 50%;
+    --sidebar-background: 220 50% 8%;
+    --sidebar-foreground: 42 35% 96%;
+    --sidebar-primary: 42 55% 55%;
+    --sidebar-primary-foreground: 220 50% 10%;
+    --sidebar-accent: 220 50% 15%;
+    --sidebar-accent-foreground: 42 35% 96%;
+    --sidebar-border: 220 40% 20%;
+    --sidebar-ring: 42 55% 55%;
     
-    /* Custom ShoreHands tokens */
-    --navy: 213 55% 20%;
-    --navy-light: 213 45% 30%;
-    --navy-dark: 213 60% 12%;
-    --teal: 180 40% 40%;
-    --teal-light: 180 50% 55%;
-    --teal-dark: 180 45% 30%;
-    --sand: 40 30% 92%;
-    --sand-light: 45 35% 97%;
-    --sand-dark: 38 25% 80%;
+    /* Custom Ocean Concierge tokens */
+    --navy: 220 50% 10%;
+    --navy-light: 220 45% 20%;
+    --navy-dark: 220 55% 6%;
+    --gold: 42 55% 55%;
+    --gold-light: 42 60% 65%;
+    --gold-dark: 42 50% 45%;
+    --cream: 42 35% 92%;
+    --cream-light: 42 40% 97%;
+    --cream-dark: 42 30% 82%;
+    --teal: 42 55% 55%;
+    --teal-light: 42 60% 65%;
+    --teal-dark: 42 50% 45%;
+    --sand: 42 35% 92%;
+    --sand-light: 42 40% 97%;
+    --sand-dark: 42 30% 82%;
     --coral: 15 70% 60%;
     
     /* Gradients */
-    --gradient-hero: linear-gradient(135deg, hsl(213 55% 20% / 0.85), hsl(213 55% 12% / 0.95));
-    --gradient-teal: linear-gradient(135deg, hsl(180 40% 40%), hsl(180 50% 55%));
-    --gradient-sand: linear-gradient(180deg, hsl(40 30% 97%), hsl(45 35% 94%));
+    --gradient-hero: linear-gradient(135deg, hsl(220 50% 10% / 0.88), hsl(220 55% 6% / 0.95));
+    --gradient-gold: linear-gradient(135deg, hsl(42 55% 55%), hsl(42 60% 65%));
+    --gradient-cream: linear-gradient(180deg, hsl(42 35% 97%), hsl(42 40% 94%));
     
     /* Shadows */
-    --shadow-soft: 0 4px 20px -4px hsl(213 55% 20% / 0.08);
-    --shadow-medium: 0 8px 30px -8px hsl(213 55% 20% / 0.12);
-    --shadow-glow: 0 0 40px hsl(180 40% 40% / 0.2);
+    --shadow-soft: 0 4px 20px -4px hsl(220 50% 10% / 0.08);
+    --shadow-medium: 0 8px 30px -8px hsl(220 50% 10% / 0.12);
+    --shadow-glow: 0 0 40px hsl(42 55% 55% / 0.2);
   }
 
   .dark {
-    --background: 213 55% 8%;
-    --foreground: 45 30% 96%;
+    --background: 220 50% 6%;
+    --foreground: 42 35% 96%;
     
-    --card: 213 55% 12%;
-    --card-foreground: 45 30% 96%;
+    --card: 220 50% 10%;
+    --card-foreground: 42 35% 96%;
     
-    --popover: 213 55% 12%;
-    --popover-foreground: 45 30% 96%;
+    --popover: 220 50% 10%;
+    --popover-foreground: 42 35% 96%;
     
-    --primary: 180 40% 50%;
-    --primary-foreground: 213 55% 10%;
+    --primary: 42 55% 55%;
+    --primary-foreground: 220 50% 8%;
     
-    --secondary: 213 45% 18%;
-    --secondary-foreground: 45 30% 96%;
+    --secondary: 220 45% 15%;
+    --secondary-foreground: 42 35% 96%;
     
-    --muted: 213 40% 20%;
-    --muted-foreground: 40 15% 65%;
+    --muted: 220 40% 18%;
+    --muted-foreground: 42 20% 65%;
     
-    --accent: 180 40% 45%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 42 55% 50%;
+    --accent-foreground: 220 50% 8%;
     
     --destructive: 0 62% 45%;
     --destructive-foreground: 0 0% 100%;
     
-    --border: 213 40% 20%;
-    --input: 213 40% 20%;
-    --ring: 180 40% 50%;
+    --border: 220 40% 18%;
+    --input: 220 40% 18%;
+    --ring: 42 55% 55%;
   }
 }
 
@@ -140,7 +146,7 @@
 @layer components {
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: var(--gradient-teal);
+    background-image: var(--gradient-gold);
   }
   
   .bg-gradient-hero {
@@ -148,7 +154,7 @@
   }
   
   .bg-gradient-sand {
-    background: var(--gradient-sand);
+    background: var(--gradient-cream);
   }
   
   .shadow-soft {

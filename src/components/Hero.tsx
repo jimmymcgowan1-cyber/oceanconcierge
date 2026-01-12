@@ -24,7 +24,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-teal/20 text-teal-light text-sm font-medium mb-6 backdrop-blur-sm border border-teal/30">
+            <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gold/20 text-gold-light text-sm font-medium mb-6 backdrop-blur-sm border border-gold/30">
               <Star className="w-4 h-4 fill-current" />
               Premium Beach Home Concierge
             </span>
@@ -34,17 +34,17 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-sand-light leading-tight mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-cream-light leading-tight mb-6"
           >
             Your Beach Home,{" "}
-            <span className="text-teal-light">Always Ready</span>
+            <span className="text-gold-light">Always Ready</span>
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="text-lg md:text-xl text-sand/80 mb-8 max-w-2xl"
+            className="text-lg md:text-xl text-cream/80 mb-8 max-w-2xl"
           >
             We're your trusted concierge for second homes at the beach. From stocking your fridge 
             to climate control, home checks, and seasonal prep — we handle everything so you can 
@@ -74,30 +74,30 @@ const Hero = () => {
             className="flex flex-wrap gap-6 md:gap-10"
           >
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-teal/20 flex items-center justify-center backdrop-blur-sm">
-                <Shield className="w-6 h-6 text-teal-light" />
+              <div className="w-12 h-12 rounded-xl bg-gold/20 flex items-center justify-center backdrop-blur-sm">
+                <Shield className="w-6 h-6 text-gold-light" />
               </div>
               <div>
-                <p className="text-sand-light font-semibold">Fully Insured</p>
-                <p className="text-sand/60 text-sm">Licensed & bonded</p>
+                <p className="text-cream-light font-semibold">Fully Insured</p>
+                <p className="text-cream/60 text-sm">Licensed & bonded</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-teal/20 flex items-center justify-center backdrop-blur-sm">
-                <Clock className="w-6 h-6 text-teal-light" />
+              <div className="w-12 h-12 rounded-xl bg-gold/20 flex items-center justify-center backdrop-blur-sm">
+                <Clock className="w-6 h-6 text-gold-light" />
               </div>
               <div>
-                <p className="text-sand-light font-semibold">24/7 Support</p>
-                <p className="text-sand/60 text-sm">Always available</p>
+                <p className="text-cream-light font-semibold">24/7 Support</p>
+                <p className="text-cream/60 text-sm">Always available</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-xl bg-teal/20 flex items-center justify-center backdrop-blur-sm">
-                <Star className="w-6 h-6 text-teal-light fill-current" />
+              <div className="w-12 h-12 rounded-xl bg-gold/20 flex items-center justify-center backdrop-blur-sm">
+                <Star className="w-6 h-6 text-gold-light fill-current" />
               </div>
               <div>
-                <p className="text-sand-light font-semibold">5-Star Rated</p>
-                <p className="text-sand/60 text-sm">Trusted by 200+ families</p>
+                <p className="text-cream-light font-semibold">5-Star Rated</p>
+                <p className="text-cream/60 text-sm">Trusted by 200+ families</p>
               </div>
             </div>
           </motion.div>

@@ -15,7 +15,7 @@ const services = [
     icon: Home,
     title: "Home Check-Ins",
     description: "Regular inspections to ensure your property is secure, clean, and in perfect condition while you're away.",
-    color: "bg-teal/10 text-teal",
+    color: "bg-gold/10 text-gold",
   },
   {
     icon: Thermometer,
@@ -27,7 +27,7 @@ const services = [
     icon: ShoppingCart,
     title: "Grocery Stocking",
     description: "Send us your list and we'll have your fridge fully stocked with fresh groceries before you arrive.",
-    color: "bg-teal/10 text-teal",
+    color: "bg-gold/10 text-gold",
   },
   {
     icon: Wrench,
@@ -39,7 +39,7 @@ const services = [
     icon: Droplets,
     title: "Pool & Spa Care",
     description: "Professional pool and spa maintenance to ensure crystal-clear water awaits your arrival.",
-    color: "bg-teal-light/10 text-teal-light",
+    color: "bg-gold-light/10 text-gold-light",
   },
   {
     icon: KeyRound,
@@ -51,7 +51,7 @@ const services = [
     icon: Leaf,
     title: "Seasonal Prep",
     description: "Winterization, storm prep, and seasonal opening/closing services for your beach property.",
-    color: "bg-teal/10 text-teal",
+    color: "bg-gold/10 text-gold",
   },
   {
     icon: Shield,
@@ -72,7 +72,7 @@ const Services = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="text-teal font-semibold text-sm uppercase tracking-wider mb-4 block">
+          <span className="text-gold font-semibold text-sm uppercase tracking-wider mb-4 block">
             Our Services
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
@@ -94,7 +94,7 @@ const Services = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="group"
             >
-              <div className="h-full p-6 rounded-2xl bg-card border border-border hover:border-teal/30 transition-all duration-300 hover:shadow-medium">
+              <div className="h-full p-6 rounded-2xl bg-card border border-border hover:border-gold/30 transition-all duration-300 hover:shadow-medium">
                 <div className={`w-14 h-14 rounded-xl ${service.color} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
                   <service.icon className="w-7 h-7" />
                 </div>

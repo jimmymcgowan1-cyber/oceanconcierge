@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     question: "Are you licensed and insured?",
-    answer: "Yes, ShoreHands is fully licensed, bonded, and insured. All our team members undergo background checks, and we carry comprehensive liability insurance for your peace of mind.",
+    answer: "Yes, Ocean Concierge is fully licensed, bonded, and insured. All our team members undergo background checks, and we carry comprehensive liability insurance for your peace of mind.",
   },
 ];
 
@@ -52,7 +52,7 @@ const FAQ = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="text-teal font-semibold text-sm uppercase tracking-wider mb-4 block">
+          <span className="text-gold font-semibold text-sm uppercase tracking-wider mb-4 block">
             FAQ
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
@@ -76,9 +76,9 @@ const FAQ = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-card border border-border rounded-xl px-6 data-[state=open]:border-teal/30 transition-colors"
+                className="bg-card border border-border rounded-xl px-6 data-[state=open]:border-gold/30 transition-colors"
               >
-                <AccordionTrigger className="text-left font-heading font-semibold text-foreground hover:text-teal hover:no-underline py-5">
+                <AccordionTrigger className="text-left font-heading font-semibold text-foreground hover:text-gold hover:no-underline py-5">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">

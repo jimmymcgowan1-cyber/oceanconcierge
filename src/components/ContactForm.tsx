@@ -49,9 +49,9 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-sand/30 relative overflow-hidden">
+    <section id="contact" className="py-24 bg-cream/30 relative overflow-hidden">
       {/* Background decoration */}
-      <div className="absolute top-0 right-0 w-96 h-96 bg-teal/5 rounded-full blur-3xl" />
+      <div className="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-coral/5 rounded-full blur-3xl" />
 
       <div className="container mx-auto px-4 lg:px-8 relative z-10">
@@ -63,22 +63,22 @@ const ContactForm = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="inline-block px-4 py-2 bg-teal/10 text-teal rounded-full text-sm font-medium mb-6">
+            <span className="inline-block px-4 py-2 bg-gold/10 text-gold rounded-full text-sm font-medium mb-6">
               Get Started
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
               Request Your{" "}
-              <span className="text-teal">Free Quote</span>
+              <span className="text-gold">Free Quote</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Tell us about your shore property and we'll create a custom concierge 
+              Tell us about your beach property and we'll create a custom concierge 
               plan tailored to your needs. No commitment required.
             </p>
 
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center flex-shrink-0">
-                  <MapPin className="w-6 h-6 text-teal" />
+                <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center flex-shrink-0">
+                  <MapPin className="w-6 h-6 text-gold" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Service Area</h4>
@@ -89,8 +89,8 @@ const ContactForm = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center flex-shrink-0">
-                  <Phone className="w-6 h-6 text-teal" />
+                <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center flex-shrink-0">
+                  <Phone className="w-6 h-6 text-gold" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Call Us</h4>
@@ -99,12 +99,12 @@ const ContactForm = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-teal/10 flex items-center justify-center flex-shrink-0">
-                  <Mail className="w-6 h-6 text-teal" />
+                <div className="w-12 h-12 rounded-xl bg-gold/10 flex items-center justify-center flex-shrink-0">
+                  <Mail className="w-6 h-6 text-gold" />
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                  <p className="text-muted-foreground">hello@shorehands.com</p>
+                  <p className="text-muted-foreground">hello@oceanconcierge.com</p>
                 </div>
               </div>
             </div>
