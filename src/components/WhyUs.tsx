@@ -40,8 +40,8 @@ const WhyUs = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-teal font-semibold text-sm uppercase tracking-wider mb-4 block">
-              Why ShoreHands
+            <span className="text-gold font-semibold text-sm uppercase tracking-wider mb-4 block">
+              Why Ocean Concierge
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-foreground mb-6">
               Your Trusted Partner for Beach Home Care
@@ -62,7 +62,7 @@ const WhyUs = () => {
                   transition={{ duration: 0.4, delay: index * 0.1 }}
                   className="flex items-center gap-3"
                 >
-                  <CheckCircle2 className="w-5 h-5 text-teal flex-shrink-0" />
+                  <CheckCircle2 className="w-5 h-5 text-gold flex-shrink-0" />
                   <span className="text-foreground">{benefit}</span>
                 </motion.div>
               ))}
@@ -78,10 +78,10 @@ const WhyUs = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: index * 0.15 }}
-                className="flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-teal/30 transition-all duration-300 hover:shadow-medium"
+                className="flex gap-5 p-6 rounded-2xl bg-card border border-border hover:border-gold/30 transition-all duration-300 hover:shadow-medium"
               >
-                <div className="w-14 h-14 rounded-xl bg-teal/10 flex items-center justify-center flex-shrink-0">
-                  <feature.icon className="w-7 h-7 text-teal" />
+                <div className="w-14 h-14 rounded-xl bg-gold/10 flex items-center justify-center flex-shrink-0">
+                  <feature.icon className="w-7 h-7 text-gold" />
                 </div>
                 <div>
                   <h3 className="text-xl font-heading font-semibold text-foreground mb-2">

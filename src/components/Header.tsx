@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/ocean-concierge-logo.jpg";
 
 const navLinks = [
   { name: "Services", href: "#services" },
@@ -36,14 +37,16 @@ const Header = () => {
       <div className="container mx-auto px-4 lg:px-8">
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-teal flex items-center justify-center">
-              <span className="text-accent-foreground font-heading font-bold text-xl">S</span>
-            </div>
+          <a href="#" className="flex items-center gap-3">
+            <img 
+              src={logo} 
+              alt="Ocean Concierge" 
+              className="h-12 w-auto rounded-lg"
+            />
             <span className={`font-heading font-bold text-xl transition-colors ${
-              isScrolled ? "text-foreground" : "text-sand-light"
+              isScrolled ? "text-foreground" : "text-cream-light"
             }`}>
-              ShoreHands
+              Ocean Concierge
             </span>
           </a>
 
@@ -53,8 +56,8 @@ const Header = () => {
               <a
                 key={link.name}
                 href={link.href}
-                className={`font-medium transition-colors hover:text-teal ${
-                  isScrolled ? "text-foreground" : "text-sand-light"
+                className={`font-medium transition-colors hover:text-gold ${
+                  isScrolled ? "text-foreground" : "text-cream-light"
                 }`}
               >
                 {link.name}
@@ -75,9 +78,9 @@ const Header = () => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className={isScrolled ? "text-foreground" : "text-sand-light"} size={24} />
+              <X className={isScrolled ? "text-foreground" : "text-cream-light"} size={24} />
             ) : (
-              <Menu className={isScrolled ? "text-foreground" : "text-sand-light"} size={24} />
+              <Menu className={isScrolled ? "text-foreground" : "text-cream-light"} size={24} />
             )}
           </button>
         </nav>
@@ -95,7 +98,7 @@ const Header = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-foreground font-medium py-2 hover:text-teal transition-colors"
+                  className="text-foreground font-medium py-2 hover:text-gold transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
