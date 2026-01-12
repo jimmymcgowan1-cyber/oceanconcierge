@@ -34,7 +34,7 @@ const CTA = () => {
             </Button>
             <Button variant="outline" size="xl" className="border-2">
               <Phone className="w-5 h-5" />
-              (410) 555-BEACH
+              609-865-4038
             </Button>
           </div>
 
