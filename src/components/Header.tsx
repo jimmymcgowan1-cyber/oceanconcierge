@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 import logo from "@/assets/ocean-concierge-logo.jpg";
 
 const navLinks = [
@@ -67,9 +68,11 @@ const Header = () => {
 
           {/* CTA Button */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant={isScrolled ? "teal" : "hero"} size="lg">
-              Get Started
-            </Button>
+            <Link to="/checklist">
+              <Button variant={isScrolled ? "teal" : "hero"} size="lg">
+                Get Started
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -104,9 +107,11 @@ const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <Button variant="teal" size="lg" className="mt-2">
-                Get Started
-              </Button>
+              <Link to="/checklist" onClick={() => setIsMobileMenuOpen(false)}>
+                <Button variant="teal" size="lg" className="mt-2 w-full">
+                  Get Started
+                </Button>
+              </Link>
             </div>
           </motion.div>
         )}

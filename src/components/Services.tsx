@@ -7,7 +7,8 @@ import {
   Droplets,
   KeyRound,
   Leaf,
-  Shield
+  Shield,
+  Plane
 } from "lucide-react";
 
 const services = [
@@ -58,6 +59,12 @@ const services = [
     title: "Storm Watch",
     description: "During severe weather, we monitor your property and take immediate action if needed.",
     color: "bg-coral/10 text-coral",
+  },
+  {
+    icon: Plane,
+    title: "Drone Fly-Around",
+    description: "Aerial inspection of your property before and after major weather events, or on-demand anytime.",
+    color: "bg-teal/10 text-teal",
   },
 ];
 
