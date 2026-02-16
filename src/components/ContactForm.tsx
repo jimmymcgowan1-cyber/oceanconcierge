@@ -13,8 +13,9 @@ import {
   FormLabel,
   FormMessage,
 } from "@/components/ui/form";
+import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
-import { Send, MapPin, Phone, Mail } from "lucide-react";
+import { Send, MapPin, Phone, Mail, Loader2 } from "lucide-react";
 
 const contactSchema = z.object({
   name: z.string().trim().min(1, "Name is required").max(100, "Name must be less than 100 characters"),
@@ -39,13 +40,35 @@ const ContactForm = () => {
     },
   });
 
-  const onSubmit = (data: ContactFormData) => {
-    console.log("Form submitted:", data);
-    toast({
-      title: "Request Submitted!",
-      description: "We'll get back to you within 24 hours with your custom quote.",
-    });
-    form.reset();
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const onSubmit = async (data: ContactFormData) => {
+    setIsSubmitting(true);
+    try {
+      const payload = {
+        ...data,
+        timestamp: new Date().toISOString(),
+      };
+      const response = await fetch("https://script.google.com/macros/s/PLACEHOLDER/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      toast({
+        title: "Request Submitted!",
+        description: "We'll get back to you within 24 hours with your custom quote.",
+      });
+      form.reset();
+    } catch (error) {
+      toast({
+        title: "Submission Failed",
+        description: "Something went wrong. Please try again or call us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -94,7 +117,7 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Call Us</h4>
-                  <p className="text-muted-foreground">(410) 555-BEACH</p>
+                  <p className="text-muted-foreground">609-865-4038</p>
                 </div>
               </div>
 
@@ -104,7 +127,7 @@ const ContactForm = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold text-foreground mb-1">Email</h4>
-                  <p className="text-muted-foreground">hello@oceanconcierge.com</p>
+                  <p className="text-muted-foreground">nicole.k.mcgowan@gmail.com</p>
                 </div>
               </div>
             </div>
@@ -198,9 +221,9 @@ const ContactForm = () => {
                   )}
                 />
 
-                <Button type="submit" variant="teal" size="lg" className="w-full">
-                  <Send className="w-5 h-5" />
-                  Request Free Quote
+                <Button type="submit" variant="teal" size="lg" className="w-full" disabled={isSubmitting}>
+                  {isSubmitting ? <Loader2 className="w-5 h-5 animate-spin" /> : <Send className="w-5 h-5" />}
+                  {isSubmitting ? "Submitting..." : "Request Free Quote"}
                 </Button>
 
                 <p className="text-center text-sm text-muted-foreground">

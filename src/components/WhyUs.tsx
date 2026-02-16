@@ -20,7 +20,7 @@ const features = [
 ];
 
 const benefits = [
-  "Fully licensed, bonded, and insured",
+  "Background-checked and trustworthy team",
   "Vetted and trusted local vendor network",
   "Photo documentation with every visit",
   "Secure key and access management",
