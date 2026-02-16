@@ -46,10 +46,11 @@ const ContactForm = () => {
     setIsSubmitting(true);
     try {
       const payload = {
+        formType: "contact",
         ...data,
         timestamp: new Date().toISOString(),
       };
-      const response = await fetch("https://script.google.com/macros/s/PLACEHOLDER/exec", {
+      await fetch("https://script.google.com/macros/s/AKfycbys2CXtM2Df4sMqt_wALQDmRGznlL8qJE1RM_okYigYj__7pPlby8BzrieT4vwEKmJqww/exec", {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "application/json" },
