@@ -134,10 +134,11 @@ const ServiceChecklist = () => {
     setIsSubmitting(true);
     try {
       const payload = {
+        formType: "checklist",
         ...data,
         timestamp: new Date().toISOString(),
       };
-      await fetch("https://script.google.com/macros/s/PLACEHOLDER/exec", {
+      await fetch("https://script.google.com/macros/s/AKfycbys2CXtM2Df4sMqt_wALQDmRGznlL8qJE1RM_okYigYj__7pPlby8BzrieT4vwEKmJqww/exec", {
         method: "POST",
         mode: "no-cors",
         headers: { "Content-Type": "application/json" },
