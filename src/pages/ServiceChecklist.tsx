@@ -174,23 +174,61 @@ const ServiceChecklist = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="bg-card rounded-3xl p-8 md:p-12 max-w-lg text-center shadow-medium"
+          className="bg-card rounded-3xl p-8 md:p-12 max-w-xl shadow-medium"
         >
-          <div className="w-20 h-20 bg-teal/10 rounded-full flex items-center justify-center mx-auto mb-6">
-            <Check className="w-10 h-10 text-teal" />
+          <div className="text-center mb-10">
+            <div className="w-20 h-20 bg-teal/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <Check className="w-10 h-10 text-teal" />
+            </div>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-3">
+              You're All Set!
+            </h2>
+            <p className="text-muted-foreground">
+              We've received your service interest checklist and we're excited to help care for your property.
+            </p>
           </div>
-          <h2 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-4">
-            Thank You!
-          </h2>
-          <p className="text-muted-foreground mb-8">
-            We've received your service interest checklist. One of our team members will contact you within 24 hours to discuss your property needs and provide a custom quote.
-          </p>
-          <Link to="/">
-            <Button variant="teal" size="lg">
-              <ArrowLeft className="w-4 h-4" />
-              Back to Home
-            </Button>
-          </Link>
+
+          <div className="space-y-4 mb-10">
+            <h3 className="text-sm font-semibold text-muted-foreground uppercase tracking-wider">
+              What Happens Next
+            </h3>
+            {[
+              { step: "1", title: "We Review Your Needs", description: "Our team will review your checklist and prepare a personalized service plan." },
+              { step: "2", title: "We'll Reach Out Within 24 Hours", description: "Expect a call or email from us to discuss your property and answer any questions." },
+              { step: "3", title: "Custom Quote Delivered", description: "You'll receive a detailed quote tailored to the services you selected — no obligation." },
+              { step: "4", title: "Relax, We've Got It", description: "Once approved, we start taking care of your beach home so you don't have to worry." },
+            ].map((item) => (
+              <div key={item.step} className="flex items-start gap-4">
+                <div className="w-8 h-8 rounded-full bg-teal/10 text-teal flex items-center justify-center text-sm font-bold flex-shrink-0 mt-0.5">
+                  {item.step}
+                </div>
+                <div>
+                  <p className="font-semibold text-foreground text-sm">{item.title}</p>
+                  <p className="text-muted-foreground text-sm">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="bg-muted/50 rounded-xl p-5 mb-8 text-center">
+            <p className="text-sm text-muted-foreground mb-1">Questions in the meantime?</p>
+            <a href="tel:6098654038" className="text-teal font-semibold hover:underline">
+              609-865-4038
+            </a>
+            <span className="text-muted-foreground mx-2">·</span>
+            <a href="mailto:nicole.k.mcgowan@gmail.com" className="text-teal font-semibold hover:underline text-sm">
+              nicole.k.mcgowan@gmail.com
+            </a>
+          </div>
+
+          <div className="text-center">
+            <Link to="/">
+              <Button variant="teal" size="lg">
+                <ArrowLeft className="w-4 h-4" />
+                Back to Home
+              </Button>
+            </Link>
+          </div>
         </motion.div>
       </div>
     );
