@@ -25,12 +25,12 @@ const Footer = () => {
               We keep your property perfect, so you can simply arrive and relax.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-lg bg-cream/10 hover:bg-gold/20 flex items-center justify-center transition-colors">
+              <div className="w-10 h-10 rounded-lg bg-cream/10 flex items-center justify-center opacity-50 cursor-default" title="Coming soon">
                 <Facebook className="w-5 h-5 text-cream-light" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-lg bg-cream/10 hover:bg-gold/20 flex items-center justify-center transition-colors">
+              </div>
+              <div className="w-10 h-10 rounded-lg bg-cream/10 flex items-center justify-center opacity-50 cursor-default" title="Coming soon">
                 <Instagram className="w-5 h-5 text-cream-light" />
-              </a>
+              </div>
             </div>
           </div>
 

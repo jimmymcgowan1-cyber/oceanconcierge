@@ -37,7 +37,7 @@ const faqs = [
   },
   {
     question: "Are you licensed and insured?",
-    answer: "Yes, Ocean Concierge is fully licensed, bonded, and insured. All our team members undergo background checks, and we carry comprehensive liability insurance for your peace of mind.",
+    answer: "Ocean Concierge is a locally owned small business committed to professionalism and care. All team members undergo background checks, and we carry liability coverage for your peace of mind. We're happy to discuss our credentials during your consultation.",
   },
 ];
 

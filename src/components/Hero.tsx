@@ -57,13 +57,17 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="flex flex-col sm:flex-row gap-4 mb-12"
           >
-            <Button variant="hero" size="xl">
-              Request a Quote
-              <ArrowRight className="w-5 h-5" />
-            </Button>
-            <Button variant="hero-outline" size="xl">
-              Explore Services
-            </Button>
+            <a href="#contact">
+              <Button variant="hero" size="xl">
+                Request a Quote
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </a>
+            <a href="#services">
+              <Button variant="hero-outline" size="xl">
+                Explore Services
+              </Button>
+            </a>
           </motion.div>
 
           {/* Trust Indicators */}
@@ -78,8 +82,8 @@ const Hero = () => {
                 <Shield className="w-6 h-6 text-gold-light" />
               </div>
               <div>
-                <p className="text-white font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">Fully Insured</p>
-                <p className="text-white/80 text-sm drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">Licensed & bonded</p>
+                <p className="text-white font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">Peace of Mind</p>
+                <p className="text-white/80 text-sm drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">Your home in good hands</p>
               </div>
             </div>
             <div className="flex items-center gap-3">
@@ -96,8 +100,8 @@ const Hero = () => {
                 <Star className="w-6 h-6 text-gold-light fill-current" />
               </div>
               <div>
-                <p className="text-white font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">5-Star Rated</p>
-                <p className="text-white/80 text-sm drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">Trusted by 200+ families</p>
+                <p className="text-white font-semibold drop-shadow-[0_2px_4px_rgba(0,0,0,0.4)]">New to the Shore</p>
+                <p className="text-white/80 text-sm drop-shadow-[0_1px_3px_rgba(0,0,0,0.4)]">Locally owned & operated</p>
               </div>
             </div>
           </motion.div>

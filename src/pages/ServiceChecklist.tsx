@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
-import { ArrowLeft, ArrowRight, Check, Send, Plane } from "lucide-react";
+import { ArrowLeft, ArrowRight, Check, Send, Plane, Loader2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -96,6 +96,7 @@ const sections = [
 const ServiceChecklist = () => {
   const [currentSection, setCurrentSection] = useState(1);
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
   const form = useForm<FormData>({
@@ -129,13 +130,33 @@ const ServiceChecklist = () => {
     },
   });
 
-  const onSubmit = (data: FormData) => {
-    console.log("Form submitted:", data);
-    setIsSubmitted(true);
-    toast({
-      title: "Checklist Submitted!",
-      description: "We'll be in touch within 24 hours to discuss your needs.",
-    });
+  const onSubmit = async (data: FormData) => {
+    setIsSubmitting(true);
+    try {
+      const payload = {
+        ...data,
+        timestamp: new Date().toISOString(),
+      };
+      await fetch("https://script.google.com/macros/s/PLACEHOLDER/exec", {
+        method: "POST",
+        mode: "no-cors",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      setIsSubmitted(true);
+      toast({
+        title: "Checklist Submitted!",
+        description: "We'll be in touch within 24 hours to discuss your needs.",
+      });
+    } catch (error) {
+      toast({
+        title: "Submission Failed",
+        description: "Something went wrong. Please try again or call us directly.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const nextSection = () => {
@@ -938,9 +959,9 @@ const ServiceChecklist = () => {
                       <ArrowRight className="w-4 h-4" />
                     </Button>
                   ) : (
-                    <Button type="submit" variant="teal">
-                      <Send className="w-4 h-4" />
-                      Submit Checklist
+                    <Button type="submit" variant="teal" disabled={isSubmitting}>
+                      {isSubmitting ? <Loader2 className="w-4 h-4 animate-spin" /> : <Send className="w-4 h-4" />}
+                      {isSubmitting ? "Submitting..." : "Submit Checklist"}
                     </Button>
                   )}
                 </div>
